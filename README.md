@@ -134,7 +134,7 @@ Jupyter Notebook
 Clone the repository
 
 ```
-git clone https://github.com/FB-tech8/movie-recommendation-system.git
+git clone https://github.com/henil-modi/movie-recommendation-system.git
 ```
 
 Install dependencies
