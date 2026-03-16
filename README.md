@@ -1,37 +1,36 @@
 # 🎬 AI Movie Recommendation System
 
-A smart movie recommendation engine built using **Machine Learning and Natural Language Processing techniques**.
+An intelligent Movie Recommendation System built using **Machine Learning and Natural Language Processing techniques**.  
+This project analyzes movie genres and recommends similar movies using **TF-IDF Vectorization** and **Cosine Similarity**.
 
-This system analyzes movie genres and recommends similar movies using **TF-IDF vectorization and cosine similarity**.
-
-Instead of random suggestions, the AI understands genre relationships and suggests the most relevant movies.
+The system is implemented both as a **Machine Learning notebook** and a **Streamlit web application**, allowing users to interact with the recommendation engine through a simple interface.
 
 ---
 
 # 🚀 Features
 
-✔ AI-based movie recommendations  
-✔ Smart movie search system  
-✔ Content-based recommendation engine  
-✔ TF-IDF feature extraction  
-✔ Cosine similarity scoring  
-✔ Visualization of movie genres  
-✔ Interactive movie recommendation interface
+✔ AI-based movie recommendation engine  
+✔ Smart movie search functionality  
+✔ Content-based filtering algorithm  
+✔ TF-IDF feature extraction from genres  
+✔ Cosine similarity ranking system  
+✔ Interactive Streamlit web application  
+✔ Dataset visualization and analysis  
 
 ---
 
 # 🧠 How the AI Works
 
-The recommendation pipeline follows these steps:
+The recommendation engine follows these steps:
 
-1. Load movie dataset (MovieLens dataset)
-2. Extract genre information from movies
+1. Load the MovieLens dataset
+2. Extract genre information from each movie
 3. Convert genres into numerical vectors using **TF-IDF**
-4. Compute similarity between movies using **cosine similarity**
+4. Compute similarity between movies using **Cosine Similarity**
 5. Rank movies based on similarity score
-6. Recommend the most similar movies
+6. Recommend the **most similar movies**
 
-This technique is known as **Content-Based Filtering**.
+This approach is known as **Content-Based Recommendation Systems**, commonly used in platforms like **Netflix and Amazon**.
 
 ---
 
@@ -39,9 +38,9 @@ This technique is known as **Content-Based Filtering**.
 
 Dataset used: **MovieLens Latest Small Dataset**
 
-Dataset contains:
+Dataset details:
 
-Total movies: **9742**
+Total Movies: **9742**
 
 Columns used:
 
@@ -57,21 +56,17 @@ https://grouplens.org/datasets/movielens/
 
 # 🔍 Movie Search Feature
 
-Users can search for movies even if they don't know the exact title.
+Users can search movies even without typing the exact title.
 
 Example:
 
-```
 search_movie("toy")
-```
 
 Output:
 
-```
-Toy Story (1995)
-Toy Story 2 (1999)
+Toy Story (1995)  
+Toy Story 2 (1999)  
 Toy Story 3 (2010)
-```
 
 ---
 
@@ -79,25 +74,42 @@ Toy Story 3 (2010)
 
 Input:
 
-```
 recommend_movies("Toy Story (1995)")
-```
 
 Output:
 
-```
-Toy Story 2 (1999)
-A Bug's Life (1998)
-Monsters Inc. (2001)
-Aladdin (1992)
+Toy Story 2 (1999)  
+A Bug's Life (1998)  
+Monsters Inc. (2001)  
+Aladdin (1992)  
 The Lion King (1994)
-```
+
+The AI recommends movies with **similar genre characteristics**.
 
 ---
 
-# 📈 Genre Distribution Visualization
+# 🌐 Web Application
 
-The project also analyzes the dataset to find the most common movie genres.
+This project also includes a **Streamlit web interface** where users can enter a movie name and receive recommendations instantly.
+
+Example interface:
+
+🎬 AI Movie Recommendation System  
+Enter a movie name → Toy Story  
+
+Recommended Movies:
+
+Toy Story 2  
+A Bug's Life  
+Monsters Inc  
+Shrek  
+Finding Nemo  
+
+---
+
+# 📈 Dataset Visualization
+
+The project also analyzes the dataset to visualize the **most common movie genres**.
 
 ![Genre Distribution](genre_distribution.png)
 
@@ -105,16 +117,16 @@ The project also analyzes the dataset to find the most common movie genres.
 
 # 📁 Project Structure
 
-```
 movie-recommendation-system
-│
-├ movies.csv
-├ recommendation_model.ipynb
-├ genre_distribution.png
-├ recommendation_chart.png
-├ requirements.txt
-└ README.md
-```
+
+movies.csv  
+ratings.csv  
+recommendation_model.ipynb  
+app.py  
+genre_distribution.png  
+recommendation_chart.png  
+requirements.txt  
+README.md  
 
 ---
 
@@ -125,6 +137,7 @@ Pandas
 NumPy  
 Scikit-Learn  
 Matplotlib  
+Streamlit  
 Jupyter Notebook  
 
 ---
@@ -133,21 +146,25 @@ Jupyter Notebook
 
 Clone the repository
 
-```
 git clone https://github.com/henil-modi/movie-recommendation-system.git
-```
 
-Install dependencies
+Navigate to project folder
 
-```
+cd movie-recommendation-system
+
+Install required libraries
+
 pip install -r requirements.txt
-```
 
-Run the notebook
+---
 
-```
-recommendation_model.ipynb
-```
+# ▶ Run the Web Application
+
+Start the Streamlit app:
+
+streamlit run app.py
+
+The application will open automatically in your browser.
 
 ---
 
@@ -155,12 +172,13 @@ recommendation_model.ipynb
 
 Hybrid recommendation system  
 User rating-based recommendations  
-Web interface using Streamlit  
+Deep learning recommendation models  
 Integration with movie APIs  
-Deep learning recommendation models
+Advanced UI improvements  
 
 ---
 
 # 👨‍💻 Author
 
 Henil Modi  
+
